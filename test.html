@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <ul>
+            <i class="fas fa-search"></i>
+        
+            <i class="fas fa-comment-alt"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user-circle"></i>
+        
+          
+        </ul>
+        <div id="mySidenav" class="sidenav">
+           <!-- close sidebar-->
+           <img src="logo.png" alt="">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;close</a> 
+            <a href="#">link a</a>
+            <a href="#">link b</a>
+            <a href="#">link c</a>
+            <a href="#">link d</a>
+            <a href="#">link h </a>
+            <a href="#">link y</a>
+            <a href="#">link z</a>
+          </div>
+          
+    </header>
+    <main>
+        <div class="indexcontainer">
+        <div class="index1">
+            <ul>
+                <i>Activity</i>
+            </ul>
+            
+            <hr>
+            
+        </div>
+        <div class="index1">
+            <ul>
+                <i>Vehicles</i>
+                <i class="fas fa-list-ul" ></i>
+                <i class="fas fa-map"></i>
+            </ul>   
+           
+            <hr>
+           
+        </div>
+        </div>
+        
+    </main>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</body>
+</html>
